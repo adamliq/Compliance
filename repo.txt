@@ -8,3 +8,5 @@ curl -L https://github.com/goss-org/goss/releases/latest/download/dgoss -o /usr/
 # Alternatively, using the latest master
 # curl -L https://raw.githubusercontent.com/goss-org/goss/master/extras/dgoss/dgoss -o /usr/local/bin/dgoss
 chmod +rx /usr/local/bin/dgoss
+
+https://plugins.nessus.org/v2/nessus.php?f=all-2.0.tar.gz&u=101d3f5c97190af1241d82cfa25da192&p=026d4d36c3e268762ff61b83476bd1d6
