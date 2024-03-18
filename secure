@@ -1,0 +1,158 @@
+Mar 16 15:51:14 oracle gdm-password][269789]: gkr-pam: unlocked login keyring
+Mar 16 15:52:10 oracle sudo[269870]:    adam : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/bin/cat xrdp.log
+Mar 16 15:52:10 oracle sudo[269870]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:52:10 oracle sudo[269870]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:52:56 oracle sudo[269906]:    adam : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/bin/cat xrdp.log
+Mar 16 15:52:56 oracle sudo[269906]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:52:56 oracle sudo[269906]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:54:08 oracle polkitd[772]: Operator of unix-session:2 successfully authenticated as unix-user:adam to gain TEMPORARY authorization for action org.gnome.controlcenter.user-accounts.administration for unix-process:269925:155097393 [gnome-control-center] (owned by unix-user:adam)
+Mar 16 15:54:33 oracle accounts-daemon[791]: request by system-bus-name::1.1322 [gnome-control-center pid:269925 uid:1000]: create user 'test'
+Mar 16 15:54:33 oracle useradd[270036]: new group: name=test, GID=1002
+Mar 16 15:54:33 oracle useradd[270036]: new user: name=test, UID=1002, GID=1002, home=/home/test, shell=/bin/bash
+Mar 16 15:54:34 oracle accounts-daemon[791]: request by system-bus-name::1.1322 [gnome-control-center pid:269925 uid:1000]: set password and hint of user 'test' (1002)
+Mar 16 15:54:34 oracle usermod[270059]: change user 'test' password
+Mar 16 15:54:45 oracle systemd[270086]: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Mar 16 15:54:45 oracle xrdp-sesman[270082]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 15:54:47 oracle polkitd[772]: Registered Authentication Agent for unix-session:c2 (system bus name :1.1523 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 15:54:54 oracle sudo[271057]:    adam : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/bin/cat xrdp.log
+Mar 16 15:54:54 oracle sudo[271057]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:54:54 oracle sudo[271057]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:56:07 oracle sudo[271872]:    adam : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/bin/cat xrdp.log
+Mar 16 15:56:07 oracle sudo[271872]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:56:07 oracle sudo[271872]: pam_unix(sudo:session): session closed for user root
+Mar 16 15:56:27 oracle sudo[271910]:    adam : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/bin/su
+Mar 16 15:56:27 oracle sudo[271910]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 15:56:27 oracle su[271912]: pam_unix(su:session): session opened for user root by (uid=0)
+Mar 16 16:08:10 oracle xrdp-sesman[272349]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:08:10 oracle xrdp-sesman[272349]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:08:25 oracle xrdp-sesman[272547]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:08:26 oracle xrdp-sesman[272547]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:09:13 oracle xrdp-sesman[272779]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:09:13 oracle xrdp-sesman[272779]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:09:55 oracle sshd[827]: Server listening on 0.0.0.0 port 22.
+Mar 16 16:09:55 oracle sshd[827]: Server listening on :: port 22.
+Mar 16 16:09:55 oracle polkitd[788]: Loading rules from directory /etc/polkit-1/rules.d
+Mar 16 16:09:55 oracle polkitd[788]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar 16 16:09:55 oracle polkitd[788]: Finished loading, compiling and executing 13 rules
+Mar 16 16:09:55 oracle polkitd[788]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar 16 16:09:59 oracle systemd[1653]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Mar 16 16:10:00 oracle gdm-launch-environment][1418]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Mar 16 16:10:01 oracle polkitd[788]: Registered Authentication Agent for unix-session:c1 (system bus name :1.89 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:10:16 oracle systemd[2336]: pam_unix(systemd-user:session): session opened for user adam by (uid=0)
+Mar 16 16:10:16 oracle gdm-password][2324]: pam_unix(gdm-password:session): session opened for user adam by (uid=0)
+Mar 16 16:10:17 oracle polkitd[788]: Registered Authentication Agent for unix-session:2 (system bus name :1.226 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:10:26 oracle polkitd[788]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.89, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:10:26 oracle gdm-launch-environment][1418]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Mar 16 16:10:28 oracle systemd[2986]: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Mar 16 16:10:28 oracle xrdp-sesman[2981]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:10:33 oracle polkitd[788]: Registered Authentication Agent for unix-session:c2 (system bus name :1.486 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:10:37 oracle systemd[1744]: pam_unix(systemd-user:session): session closed for user gdm
+Mar 16 16:11:02 oracle sudo[4095]:    adam : TTY=pts/0 ; PWD=/home/adam ; USER=root ; COMMAND=/bin/su
+Mar 16 16:11:02 oracle sudo[4095]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 16:11:02 oracle su[4106]: pam_unix(su:session): session opened for user root by (uid=0)
+Mar 16 16:22:42 oracle xrdp-sesman[4631]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:22:43 oracle xrdp-sesman[4631]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:23:36 oracle sshd[829]: Server listening on 0.0.0.0 port 22.
+Mar 16 16:23:36 oracle sshd[829]: Server listening on :: port 22.
+Mar 16 16:23:36 oracle polkitd[779]: Loading rules from directory /etc/polkit-1/rules.d
+Mar 16 16:23:36 oracle polkitd[779]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar 16 16:23:36 oracle polkitd[779]: Finished loading, compiling and executing 13 rules
+Mar 16 16:23:36 oracle polkitd[779]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar 16 16:23:37 oracle systemd[1081]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Mar 16 16:23:37 oracle gdm-launch-environment][1014]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Mar 16 16:23:41 oracle polkitd[779]: Registered Authentication Agent for unix-session:c1 (system bus name :1.68 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:25:11 oracle systemd[2389]: pam_unix(systemd-user:session): session opened for user adam by (uid=0)
+Mar 16 16:25:11 oracle gdm-password][2369]: pam_unix(gdm-password:session): session opened for user adam by (uid=0)
+Mar 16 16:25:13 oracle polkitd[779]: Registered Authentication Agent for unix-session:2 (system bus name :1.227 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:25:22 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.68, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:25:22 oracle gdm-launch-environment][1014]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Mar 16 16:25:31 oracle systemd[3235]: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Mar 16 16:25:31 oracle xrdp-sesman[3229]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:25:32 oracle systemd[1089]: pam_unix(systemd-user:session): session closed for user gdm
+Mar 16 16:25:36 oracle polkitd[779]: Registered Authentication Agent for unix-session:c2 (system bus name :1.496 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:25:46 oracle sudo[4052]:    adam : TTY=pts/0 ; PWD=/home/adam ; USER=root ; COMMAND=/bin/su
+Mar 16 16:25:46 oracle sudo[4052]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 16:25:46 oracle su[4264]: pam_unix(su:session): session opened for user root by (uid=0)
+Mar 16 16:29:36 oracle xrdp-sesman[3229]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:29:36 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c2 (system bus name :1.496, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:34:59 oracle xrdp-sesman[5002]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:35:00 oracle polkitd[779]: Registered Authentication Agent for unix-session:c3 (system bus name :1.744 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:41:00 oracle xrdp-sesman[5002]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:41:00 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c3 (system bus name :1.744, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:41:29 oracle xrdp-sesman[5950]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:41:30 oracle polkitd[779]: Registered Authentication Agent for unix-session:c4 (system bus name :1.1040 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:42:28 oracle xrdp-sesman[5950]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:42:28 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c4 (system bus name :1.1040, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:42:39 oracle xrdp-sesman[6738]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:42:40 oracle polkitd[779]: Registered Authentication Agent for unix-session:c5 (system bus name :1.1311 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 16:51:49 oracle unix_chkpwd[7617]: password check failed for user (test)
+Mar 16 16:51:49 oracle gdm-password][7613]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=test
+Mar 16 16:52:06 oracle xrdp-sesman[6738]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 16:52:06 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c5 (system bus name :1.1311, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 16:52:58 oracle xrdp-sesman[7767]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 16:52:59 oracle polkitd[779]: Registered Authentication Agent for unix-session:c6 (system bus name :1.1600 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:02:23 oracle xrdp-sesman[7767]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 17:02:24 oracle polkitd[779]: Unregistered Authentication Agent for unix-session:c6 (system bus name :1.1600, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:02:43 oracle xrdp-sesman[8821]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:02:44 oracle polkitd[779]: Registered Authentication Agent for unix-session:c7 (system bus name :1.1899 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:08:52 oracle sshd[828]: Server listening on 0.0.0.0 port 22.
+Mar 16 17:08:52 oracle sshd[828]: Server listening on :: port 22.
+Mar 16 17:08:52 oracle polkitd[777]: Loading rules from directory /etc/polkit-1/rules.d
+Mar 16 17:08:52 oracle polkitd[777]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar 16 17:08:52 oracle polkitd[777]: Finished loading, compiling and executing 13 rules
+Mar 16 17:08:52 oracle polkitd[777]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar 16 17:08:53 oracle systemd[1081]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Mar 16 17:08:53 oracle gdm-launch-environment][1017]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Mar 16 17:08:57 oracle polkitd[777]: Registered Authentication Agent for unix-session:c1 (system bus name :1.65 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:12:18 oracle gdm-password][2389]: pam_unix(gdm-password:auth): conversation failed
+Mar 16 17:12:18 oracle gdm-password][2389]: pam_unix(gdm-password:auth): auth could not identify password for [test]
+Mar 16 17:12:18 oracle gdm-password][2389]: gkr-pam: no password is available for user
+Mar 16 17:12:19 oracle gdm-password][2396]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=adam
+Mar 16 17:12:41 oracle systemd[2412]: pam_unix(systemd-user:session): session opened for user adam by (uid=0)
+Mar 16 17:12:41 oracle gdm-password][2402]: pam_unix(gdm-password:session): session opened for user adam by (uid=0)
+Mar 16 17:12:42 oracle polkitd[777]: Registered Authentication Agent for unix-session:2 (system bus name :1.223 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:12:51 oracle polkitd[777]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.65, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:12:51 oracle gdm-launch-environment][1017]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Mar 16 17:12:55 oracle sudo[3071]:    adam : TTY=pts/0 ; PWD=/home/adam ; USER=root ; COMMAND=/bin/su
+Mar 16 17:12:55 oracle sudo[3071]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 17:12:55 oracle su[3118]: pam_unix(su:session): session opened for user root by (uid=0)
+Mar 16 17:13:01 oracle systemd[1089]: pam_unix(systemd-user:session): session closed for user gdm
+Mar 16 17:18:20 oracle systemd[3300]: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Mar 16 17:18:20 oracle xrdp-sesman[3295]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:18:21 oracle polkitd[777]: Registered Authentication Agent for unix-session:c2 (system bus name :1.514 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:23:40 oracle xrdp-sesman[3295]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 17:23:40 oracle polkitd[777]: Unregistered Authentication Agent for unix-session:c2 (system bus name :1.514, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:24:15 oracle xrdp-sesman[4931]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:24:16 oracle polkitd[777]: Registered Authentication Agent for unix-session:c3 (system bus name :1.744 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:26:41 oracle xrdp-sesman[4931]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 17:26:41 oracle polkitd[777]: Unregistered Authentication Agent for unix-session:c3 (system bus name :1.744, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:29:39 oracle xrdp-sesman[5829]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:29:40 oracle polkitd[777]: Registered Authentication Agent for unix-session:c4 (system bus name :1.1017 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:36:22 oracle xrdp-sesman[5829]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 17:36:22 oracle polkitd[777]: Unregistered Authentication Agent for unix-session:c4 (system bus name :1.1017, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:36:43 oracle sshd[829]: Server listening on 0.0.0.0 port 22.
+Mar 16 17:36:43 oracle sshd[829]: Server listening on :: port 22.
+Mar 16 17:36:43 oracle polkitd[782]: Loading rules from directory /etc/polkit-1/rules.d
+Mar 16 17:36:43 oracle polkitd[782]: Loading rules from directory /usr/share/polkit-1/rules.d
+Mar 16 17:36:43 oracle polkitd[782]: Finished loading, compiling and executing 13 rules
+Mar 16 17:36:43 oracle polkitd[782]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Mar 16 17:36:44 oracle systemd[1079]: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+Mar 16 17:36:44 oracle gdm-launch-environment][1015]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+Mar 16 17:36:48 oracle polkitd[782]: Registered Authentication Agent for unix-session:c1 (system bus name :1.64 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:37:12 oracle systemd[2351]: pam_unix(systemd-user:session): session opened for user adam by (uid=0)
+Mar 16 17:37:12 oracle gdm-password][2339]: pam_unix(gdm-password:session): session opened for user adam by (uid=0)
+Mar 16 17:37:13 oracle polkitd[782]: Registered Authentication Agent for unix-session:2 (system bus name :1.226 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:37:22 oracle polkitd[782]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.64, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:37:22 oracle gdm-launch-environment][1015]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Mar 16 17:37:33 oracle systemd[1088]: pam_unix(systemd-user:session): session closed for user gdm
+Mar 16 17:37:42 oracle systemd[3081]: pam_unix(systemd-user:session): session opened for user test by (uid=0)
+Mar 16 17:37:42 oracle xrdp-sesman[3076]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:37:44 oracle polkitd[782]: Registered Authentication Agent for unix-session:c2 (system bus name :1.504 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:38:01 oracle sudo[4061]:    adam : TTY=pts/0 ; PWD=/home/adam ; USER=root ; COMMAND=/bin/su
+Mar 16 17:38:01 oracle sudo[4061]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 16 17:38:01 oracle su[4071]: pam_unix(su:session): session opened for user root by (uid=0)
+Mar 16 17:51:49 oracle xrdp-sesman[3076]: pam_unix(xrdp-sesman:session): session closed for user test
+Mar 16 17:51:49 oracle polkitd[782]: Unregistered Authentication Agent for unix-session:c2 (system bus name :1.504, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8) (disconnected from bus)
+Mar 16 17:52:10 oracle xrdp-sesman[4733]: pam_unix(xrdp-sesman:session): session opened for user test by (uid=0)
+Mar 16 17:52:11 oracle polkitd[782]: Registered Authentication Agent for unix-session:c3 (system bus name :1.747 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_AU.UTF-8)
+Mar 16 17:52:33 oracle gdm-password][5430]: gkr-pam: unlocked login keyring
