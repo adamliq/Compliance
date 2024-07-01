@@ -1,3 +1,4 @@
+Compliance Profile. Remediate and audit
 https://github.com/ansible-lockdown
 
 Needs Goss
@@ -9,4 +10,13 @@ curl -L https://github.com/goss-org/goss/releases/latest/download/dgoss -o /usr/
 # curl -L https://raw.githubusercontent.com/goss-org/goss/master/extras/dgoss/dgoss -o /usr/local/bin/dgoss
 chmod +rx /usr/local/bin/dgoss
 
-https://plugins.nessus.org/v2/nessus.php?f=all-2.0.tar.gz&u=101d3f5c97190af1241d82cfa25da192&p=026d4d36c3e268762ff61b83476bd1d6
+
+Security Benchmarks
+https://ncp.nist.gov/repository
+https://ato-pathways.com/
+https://github.com/ComplianceAsCode/content
+
+STANDARDS
+SCAP (SSG)
+STIG
+CIS
