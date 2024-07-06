@@ -1,20 +1,49 @@
 Compliance Profile. Remediate and audit
 https://github.com/ansible-lockdown
 
-Needs Goss
-curl -L https://github.com/goss-org/goss/releases/latest/download/goss-linux-amd64 -o /usr/local/bin/goss
-chmod +rx /usr/local/bin/goss
+Get STIG Audit
+Select release based on required stig benchmark version
+https://github.com/ansible-lockdown/RHEL8-STIG-Audit/tag/X
+Copy to /var/tmp
+chmod +rx /var/tmp/x/run_audit.sh
 
-curl -L https://github.com/goss-org/goss/releases/latest/download/dgoss -o /usr/local/bin/dgoss
+Get CIS Audit
+https://github.com/ansible-lockdown/RHEL8-CIS-Audit/tree/main
+Copy to /var/tmp
+
+Install GOSS
+curl -L https://github.com/goss-org/goss/releases/tag/v0.3.16/download/goss-linux-amd64 -o /usr/local/bin/goss
+chmod +rx /usr/local/bin/goss
+curl -L https://github.com/goss-org/goss/releases/tag/v0.3.16/download/dgoss -o /usr/local/bin/dgoss
 # Alternatively, using the latest master
 # curl -L https://raw.githubusercontent.com/goss-org/goss/master/extras/dgoss/dgoss -o /usr/local/bin/dgoss
 chmod +rx /usr/local/bin/dgoss
+
+Run STIG Audit
+/var/tmp/X/run_audit.sh
+
+Run CIS Audit
+/var/tmp/X/run_audit.sh
+
+#SCAP
+GET OSCAP
+yum install openscap-scanner
+yum install scap-security-guide
+
+Get SCAP catalogue
+https://github.com/ComplianceAsCode/content/releases/download/X/scap-security-guide-X
+
+Determine profile
+oscap info /ssg-x-ds.xml
+Get xxdf_org Id from results for next step
+Run audit
+oscap xccdf eval --profile xccdf_orgX... /ssg-x-ds.xml
 
 
 Security Benchmarks
 https://ncp.nist.gov/repository
 https://ato-pathways.com/
-https://github.com/ComplianceAsCode/content
+https://github.com/ComplianceAsCode/
 
 STANDARDS
 SCAP (SSG)
