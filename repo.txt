@@ -37,7 +37,8 @@ Determine profile
 oscap info /ssg-x-ds.xml
 Get xxdf_org Id from results for next step
 Run audit
-oscap xccdf eval --profile xccdf_orgX... /ssg-x-ds.xml
+oscap xccdf eval --profile xccdf_orgX... /ssg-x-ds.xml >results.txt
+tr -d '\015' < results.txt >oscap_results.txt
 
 
 Security Benchmarks
