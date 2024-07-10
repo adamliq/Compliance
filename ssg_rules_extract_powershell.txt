@@ -1,0 +1,4 @@
+$test=(Get-Content "ssg-rhel8-xccdf.xml" | findstr "xccdf_org.ssgproject.content_rule" | findstr "Rule selected").split(" ") | findstr "xccdf_org"
+$array=@()
+$array+=$test|foreach{($_.split("="))[1]}
+$ssg=($array|sort-object -Unique)
